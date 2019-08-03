@@ -1,1 +1,67 @@
-Capstone Back-End
+## Installation
+1. Fork and clone this repository.
+2. Install dependencies using npm install.
+3. Ensure that you have nodemon installed by running npm install -g nodemon.
+4. git add. and git commit your changes.
+5. Spin up a local environment with npm run server.
+
+This is the first version of an instagram clone I built as my final project for General Assembly's Software Engineering Immersive program. It is a single-page application with working user authentication using a custom-built API. It can create, delete, update, and get all user posts. The app is currently very barebones and does not have any features aside form a CRUDable resource, which is meant to stand in as a post resource to be implemented in future iterations.
+
+Again, this project is in its first version, and it will be updated extensively in the future.
+
+Project Development Process:
+
+Build Back-End (database and "posts" resource) using mongoDB and express framework.
+Add CSS to Front-End landing page, sign-in and sign-up page, and in-app homepage.
+Add CRUD functionality to post resource.
+Problem Solving Strategy: My problem-solving process was largely refined during development of the first iteration of this project. At first I relied on the internet and external sources to guide me through my coding process, but by the end because the same problems were constantly recurring, I was able to identify them over time and solve them from experience. I identified problems by breaking them into solvable components, using debugging and console logging.
+
+Problems to Fix/Long-term Goals:
+
+I will add image upload and capture functionality.
+I will add a profile section that will be home to all user settings and posts.
+I will add a dynamic post page that contains all posts from all users.
+I will add extensive styling.
+
+API Paths & Methods
+------
+### Authentication
+
+| Method | URL
+|--------|------------------------
+| POST   | `/sign-up`
+| POST   | `/sign-in`
+| PATCH  | `/change-password/`
+| DELETE | `/sign-out/`
+
+### Posts
+
+| Method   | URL
+|--------|------------------------
+| POST   | `/create-post`
+| GET    | `/posts`
+| GET    | `/posts/:id`
+| PATCH  | `/posts/:id/update-post`
+| DELETE | `/posts/:id`
+
+Technologies Used:
+1. HTML
+2. CSS, SASS & Bootstrap
+3. React
+4. JavaScript & jQuery
+5. Axios
+6. express
+7. mongoDB
+8. Heroku
+
+Link to Entity Relationship Diagram: https://i.imgur.com/R2Ga3Pi.jpg
+
+User Stories:
+
+As a user, I want to be able to upload my own posts so I can store them in a personal collection.
+As a user, I want to be able to see what other people have posted in the app so I can stay up-to-date.
+As a user, I want to be able to update a post caption incase I think of something better to say.
+
+Deployed Site: https://oliversablove.github.io/Instagram-Clone-Front-End Deployed Back-End: https://infinite-island-91548.herokuapp.com
+
+Front-End Repository: https://github.com/oliversablove/Instagram-Clone-Front-End
